@@ -1,10 +1,10 @@
+import { Container } from '@angular/compiler/src/i18n/i18n_ast';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { ContainerComponent } from './container/container.component';
 
 const routes: Routes = [
-  {path: '', component:RegisterComponent}
+  {path: '', component:ContainerComponent}
 ];
 
 @NgModule({

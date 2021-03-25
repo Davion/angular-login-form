@@ -12,12 +12,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RegisterComponent } from './register/register.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { RegisterComponent } from './register/register.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
