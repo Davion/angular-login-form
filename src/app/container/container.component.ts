@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent implements OnInit {
-
+  isTrue: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeTheme(){
+    this.isTrue = !this.isTrue;
   }
 
 }

@@ -1,4 +1,4 @@
-<div fxLayoutAlign="center center" fxFlexFill>
+<div fxLayoutAlign="center center" fxFlexFill fxLayout="column" [class.alternative] = "isTrue">
 <mat-tab-group headerPosition="below" dynamicHeight mat-align-tabs="center" class="tabs">   
     <mat-tab label="Login"> 
         <app-login></app-login> 
@@ -8,4 +8,5 @@
         <app-register></app-register> 
     </mat-tab>
 </mat-tab-group>
+<button mat-raised-button color="primary" (click)="changeTheme()">Change Color</button>
 </div>
